@@ -19,7 +19,7 @@ class SearchRecipes extends React.Component{
         console.log('state',this.state,'url',url);
         fetch(url,{method:'GET'})
         .then(response=>response.json())
-        .then(json=>console.log('recipes',json))
+        .then(json=>{this.props.setRecipes(json.results)})
     }
 render(){
     return(

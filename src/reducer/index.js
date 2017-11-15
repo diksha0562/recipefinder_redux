@@ -4,7 +4,7 @@ import {SET_RECIPES} from '../action';
 function recipes(state=[],action){
     switch(action.type){
         case SET_RECIPES:
-            return action.type;
+            return action.items;
         default:
             return state;
 
