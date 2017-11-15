@@ -2,3 +2,7 @@ body{
     text-align: center;
     padding: 5%;
 }
+.favourite_btn{
+    cursor: pointer;
+    color: red;
+}
