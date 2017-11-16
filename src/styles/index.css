@@ -2,7 +2,16 @@ body{
     text-align: center;
     padding: 5%;
 }
+.link{
+    position: absolute;
+    top: 30px;
+    left : 30px;
+}
 .favourite_btn{
     cursor: pointer;
-    color: red;
+    color: 'red';
+    background-color: 'green';
+}
+.recipe-item{
+    padding: 10px;
 }

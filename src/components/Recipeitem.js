@@ -16,14 +16,13 @@ class Recipeitem extends React.Component{
         let {recipe} = this.props;
         return(
             <div className="recipe-item">
-                {this.state.favourited? <div>FAVOURITE</div> : <div className="favourite_btn" onClick={e=>{this.favourite(recipe)}}>FAVOURITE</div>}
-                
                 <a href={recipe.href}>
                 <h4 className="recipe-text">{recipe.title}</h4>
                 </a>
-                <p>{recipe.title}</p>
+                <p>{recipe.ingredients}</p>
                 <img src={recipe.thumbnail} alt={recipe.title} className="recipe-img"/>
-                
+                {this.state.favourited? <div style={{backgroundColor: 'Yellow'}}>FAVOURITE</div> : <div className="favourite_btn" onClick={e=>{this.favourite(recipe)}}>FAVOURITE</div>}
+                <hr/>
             </div>
         )
     }
